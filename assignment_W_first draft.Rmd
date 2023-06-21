@@ -6,6 +6,7 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
+library('rmarkdown')
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ```{r}
@@ -52,9 +53,7 @@ u <- q3 + IQR
 
 upper_outliers <- filter(Data, Data$x.p > u)
 lower_outliers <- filter(Data, Data$x.p < l)
-length(Data$x.p)
-length(upper_outliers$x.p)
-length(lower_outliers$x.p)
+
 ```
 
 ## Question 2

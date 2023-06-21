@@ -3,8 +3,7 @@ title: "Assignment 1"
 author: "The Old Republic"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-    df_print: paged
+  pdf_document:
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +16,7 @@ Data = data.frame(x.n = rnorm(50000), x.p = rPareto(50000, t=1, alpha=2))
 summary(Data)
 ```
 ## Question 1
-1. Histogramand Box Plot of the Variable x.n
+1. Histogram and Box Plot of the Variable x.n
 ```{r}
 library(ggplot2)
 library(grid)
